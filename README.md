@@ -54,7 +54,7 @@ This project runs entirely using Docker.
 
 It includes:
 
-- 2x Local EVM Chains (Anvil)
+- 2x Local EVM Chains
 - 1x Relayer Service
 - Single-command deployment
 
