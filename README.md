@@ -221,19 +221,6 @@ npx hardhat test
 
 ---
 
-#  Evaluation Criteria Coverage
-
-✔ Functional end-to-end bridge  
-✔ Relayer automation  
-✔ Failure simulation  
-✔ Replay protection  
-✔ Dockerized environment  
-✔ Environment configuration documentation  
-✔ Clean architecture  
-✔ Maintainable codebase  
-
----
-
 #  Deployment Command
 
 The entire system runs using:
