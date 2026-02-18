@@ -1,4 +1,4 @@
-# 🔗 Cross-Chain Token Bridge (Dockerized)
+#  Cross-Chain Token Bridge (Dockerized)
 
 A fully containerized cross-chain token bridge system built with Solidity smart contracts, a Node.js relayer service, and dual local EVM chains powered by Foundry Anvil.
 
@@ -13,7 +13,7 @@ This project demonstrates:
 
 ---
 
-# 📦 Architecture Overview
+#  Architecture Overview
 
 Chain A (Source Chain)
 - VaultToken (ERC20)
@@ -30,7 +30,7 @@ Relayer Service
 
 ---
 
-# 🏗 System Architecture
+#  System Architecture
 
 ```
 User → Lock Tokens (Chain A)
@@ -48,7 +48,7 @@ Unlock Original Tokens (Chain A)
 
 ---
 
-# 🐳 Dockerized Setup
+#  Dockerized Setup
 
 This project runs entirely using Docker.
 
@@ -60,9 +60,9 @@ It includes:
 
 ---
 
-# 🚀 Quick Start
+#  Quick Start
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 
 ```bash
 git clone <your-repo-url>
@@ -71,7 +71,7 @@ cd token-bridge
 
 ---
 
-### 2️⃣ Create Environment File
+### 2️ Create Environment File
 
 Create `.env` file from example:
 
@@ -81,7 +81,7 @@ cp .env.example .env
 
 ---
 
-### 3️⃣ Start System
+### 3️ Start System
 
 ```bash
 docker-compose up --build
@@ -98,7 +98,7 @@ The system will:
 
 ---
 
-# 🔐 Environment Variables
+#  Environment Variables
 
 All required variables are documented in `.env.example`.
 
@@ -121,7 +121,7 @@ Make sure:
 
 ---
 
-# 📂 Repository Structure
+#  Repository Structure
 
 ```
 contracts/              # Solidity smart contracts
@@ -134,7 +134,7 @@ README.md               # Project documentation
 
 ---
 
-# 🧠 Smart Contracts
+#  Smart Contracts
 
 ## Chain A
 
@@ -160,7 +160,7 @@ Mintable & burnable wrapped token.
 
 ---
 
-# 🔁 Relayer Service
+#  Relayer Service
 
 The relayer:
 
@@ -177,7 +177,7 @@ Security Features:
 
 ---
 
-# 🧪 Testing
+#  Testing
 
 Tests are located inside:
 
@@ -201,7 +201,7 @@ npx hardhat test
 
 ---
 
-# 🛡 Security Considerations
+#  Security Considerations
 
 - Nonce-based replay protection
 - Relayer-only mint/unlock permissions
@@ -211,7 +211,7 @@ npx hardhat test
 
 ---
 
-# ⚠ Failure Scenarios Handled
+#  Failure Scenarios Handled
 
 - Duplicate nonce replay attempts
 - Invalid unlock calls
@@ -221,7 +221,7 @@ npx hardhat test
 
 ---
 
-# 🔍 Evaluation Criteria Coverage
+#  Evaluation Criteria Coverage
 
 ✔ Functional end-to-end bridge  
 ✔ Relayer automation  
@@ -234,7 +234,7 @@ npx hardhat test
 
 ---
 
-# 🏆 Deployment Command
+#  Deployment Command
 
 The entire system runs using:
 
@@ -246,7 +246,7 @@ One command deployment.
 
 ---
 
-# 🧑‍💻 Tech Stack
+#  Tech Stack
 
 - Solidity (OpenZeppelin)
 - Hardhat
@@ -254,31 +254,6 @@ One command deployment.
 - Node.js 20
 - Docker
 - Foundry Anvil
-
----
-
-# 📌 Notes
-
-- Local chains use Chain ID 31337
-- Accounts funded with 10,000 ETH
-- Private keys printed during Anvil startup
-- Relayer auto-reconnects on RPC failure
-
----
-
-# 📜 License
-
-MIT License
-
----
-
-# 🙌 Author
-
-Built as part of Partnr technical evaluation.
-
----
-
-# 🎯 Final Statement
 
 This project demonstrates a production-style cross-chain token bridge with full automation, failure handling, and containerized deployment suitable for evaluation and portfolio presentation.
 
